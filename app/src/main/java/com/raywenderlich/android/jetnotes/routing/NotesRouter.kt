@@ -18,7 +18,7 @@ sealed class Screen {
  *
  * Также отслеживает текущий экран.
  */
-object JetNotesRouter {
+object NotesRouter {
   var currentScreen: Screen by mutableStateOf(Screen.Notes)
 
   fun navigateTo(destination: Screen) {

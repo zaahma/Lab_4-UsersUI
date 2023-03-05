@@ -4,9 +4,9 @@ import androidx.lifecycle.ViewModel
 import com.raywenderlich.android.jetnotes.data.repository.Repository
 
 /**
- * View model used for storing the global app state.
+ * Модель просмотра, используемая для хранения глобального состояния приложения.
  *
- * This view model is used for all screens.
+ * Эта модель просмотра используется для всех экранов.
  */
 class MainViewModel(private val repository: Repository) : ViewModel() {
 

@@ -24,8 +24,8 @@ private val DarkThemeColors = lightColors(
  * Отвечает за переключение цветовой палитры для темной и светлой темы.
  */
 @Composable
-fun JetNotesTheme(content: @Composable () -> Unit) {
-  val isDarkThemeEnabled = isSystemInDarkTheme() || JetNotesThemeSettings.isDarkThemeEnabled
+fun NotesTheme(content: @Composable () -> Unit) {
+  val isDarkThemeEnabled = isSystemInDarkTheme() || NotesThemeSettings.isDarkThemeEnabled
   val colors = if (isDarkThemeEnabled) DarkThemeColors else LightThemeColors
 
   MaterialTheme(colors = colors, content = content)
@@ -34,6 +34,6 @@ fun JetNotesTheme(content: @Composable () -> Unit) {
 /**
  * Позволяет переключаться между светлой и темной темой в настройках приложения.
  */
-object JetNotesThemeSettings {
+object NotesThemeSettings {
   var isDarkThemeEnabled by mutableStateOf(false)
 }
