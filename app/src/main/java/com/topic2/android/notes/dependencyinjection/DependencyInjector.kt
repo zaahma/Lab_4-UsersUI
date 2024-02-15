@@ -26,6 +26,12 @@ class DependencyInjector(applicationContext: Context) {
       AppDatabase.DATABASE_NAME
     ).build()
 
+
+
+
+
+
+  
   private fun provideRepository(database: AppDatabase): Repository {
     val noteDao = database.noteDao()
     val colorDao = database.colorDao()
