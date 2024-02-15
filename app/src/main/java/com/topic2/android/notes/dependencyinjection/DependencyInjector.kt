@@ -31,7 +31,7 @@ class DependencyInjector(applicationContext: Context) {
 
 
 
-  
+
   private fun provideRepository(database: AppDatabase): Repository {
     val noteDao = database.noteDao()
     val colorDao = database.colorDao()
