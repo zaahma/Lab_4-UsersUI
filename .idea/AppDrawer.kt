@@ -176,3 +176,10 @@ fun AppDrawer(
 
     }
 }
+@Preview
+@Composable
+fun AppDrawerPreview(){
+    NotesTheme {
+        AppDrawer(Screen.Notes, {})
+    }
+}
