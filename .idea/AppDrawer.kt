@@ -135,3 +135,11 @@ private fun LightDarkThemeItem(){
         )
     }
 }
+
+@Preview
+@Composable
+fun LightDarkThemeItemPreview() {
+    NotesTheme {
+        LightDarkThemeItem()
+    }
+}
